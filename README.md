@@ -1,5 +1,5 @@
-# dotfiles git repository
-# Author Joey Dodson
+# dotfiles
+Author: Joey Dodson
 
 This repository simply exists to track my own configuration (a.k.a. dotfiles). I have made it public in case anyone finds it interesting or useful. 
 
