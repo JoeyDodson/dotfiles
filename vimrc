@@ -235,12 +235,18 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 "}}
 
 "{{ Color-scheme
-Plug 'morhetz/gruvbox'
-    set background=dark
-    colorscheme gruvbox
-    let g:gruvbox_contrast_dark='default'
+Plug 'bluz71/vim-moonfly-colors'
+    colorscheme moonfly
 "}}
 
+"{{ Lightline
+Plug 'itchyny/lightline.vim'
+    let g:lightline = { 'colorscheme': 'moonfly' }
+"}}
+
+"{{ Transparent background
+Plug 'kjwon15/vim-transparent'
+"}}
 
 "{{ Autopairs
 " ---> closing XML tags <---
