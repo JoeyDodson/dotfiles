@@ -28,3 +28,8 @@ fi
 
 # set CAPS LOCK key to escape
 setxkbmap -option caps:escape
+
+# "--help" shortcut function
+function h() {
+	$1 --help
+}
