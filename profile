@@ -33,3 +33,8 @@ setxkbmap -option caps:escape
 function h() {
 	$1 --help
 }
+
+alias ls='ls --color=always'
+alias ll='ls -alhF'
+alias grep='grep --color=always'
+alias less='less -r'
