@@ -31,10 +31,16 @@ setxkbmap -option caps:escape
 
 # "--help" shortcut function
 function h() {
-	$1 --help
+	$1 --help | less
+}
+
+# "--version" shortcut function
+function v() {
+	$1 --version
 }
 
 alias ls='ls --color=always'
 alias ll='ls -alhF'
 alias grep='grep --color=always'
 alias less='less -r'
+alias gits='git status'
