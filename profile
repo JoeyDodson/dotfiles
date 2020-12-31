@@ -49,7 +49,9 @@ function lwhich() {
         ll $(which $1)
 }
 
-unalias l
+# if alias l is set, unset it
+[[ $(type -t l) == "alias" ]] && unalias l
+
 alias ls='ls --color=always'
 alias ll='ls -alhF'
 alias grep='grep --color=always'
