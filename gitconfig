@@ -24,3 +24,8 @@
     added = yellow
     changed = green
     untracked = red 
+[user]
+	email = joey.dodson3@gmail.com
+	name = Joey Dodson
+[core]
+	editor = vim

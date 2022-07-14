@@ -216,13 +216,14 @@ Plug 'ctrlpvim/ctrlp.vim'
 "}}
 
 
-"{{ Configuring UltiSnips
-Plug 'SirVer/ultisnips'
-Plug 'honza/vim-snippets'
-    let g:UltiSnipsExpandTrigger = "<tab>"
-    let g:UltiSnipsJumpForwardTrigger = "<tab>"
-    let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
-"}}
+" Disabling on this machine
+""{{ Configuring UltiSnips
+"Plug 'SirVer/ultisnips'
+"Plug 'honza/vim-snippets'
+"    let g:UltiSnipsExpandTrigger = "<tab>"
+"    let g:UltiSnipsJumpForwardTrigger = "<tab>"
+"    let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
+""}}
 
 
 "{{ Git integration
@@ -235,18 +236,12 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 "}}
 
 "{{ Color-scheme
-Plug 'bluz71/vim-moonfly-colors'
-    colorscheme moonfly
+Plug 'morhetz/gruvbox'
+    set background=dark
+    colorscheme gruvbox
+    let g:gruvbox_contrast_dark='default'
 "}}
 
-"{{ Lightline
-Plug 'itchyny/lightline.vim'
-    let g:lightline = { 'colorscheme': 'moonfly' }
-"}}
-
-"{{ Transparent background
-Plug 'kjwon15/vim-transparent'
-"}}
 
 "{{ Autopairs
 " ---> closing XML tags <---
