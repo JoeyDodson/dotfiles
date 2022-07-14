@@ -39,6 +39,19 @@ function v() {
 	$1 --version
 }
 
+# "| less" shortcut function
+function l() {
+        $@ | less
+}
+
+# "list/which" function
+function lwhich() {
+        ll $(which $1)
+}
+
+# if alias l is set, unset it
+[[ $(type -t l) == "alias" ]] && unalias l
+
 alias ls='ls --color=always'
 alias ll='ls -alhF'
 alias grep='grep --color=always'
