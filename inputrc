@@ -12,5 +12,5 @@
 #
 # Set bindings for vi mode.
 
-set editing-mode vi
+#set editing-mode vi
 
